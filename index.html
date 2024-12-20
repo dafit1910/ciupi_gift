@@ -3,11 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poradnik</title>
+    <title>Świąteczna Strona</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ff7b54, #ffebcd);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #b22222;
+            color: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            background-color: #228b22;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #66cdaa;
+        }
+        section {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 15px;
+            max-width: 300px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #b22222;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Witaj na mojej stronie poradnika!</h1>
-    <p>Tutaj znajdziesz wszystkie potrzebne informacje.</p>
-    <p>Skontaktuj się ze mną: <a href="mailto:twojemail@domena.com">twojemail@domena.com</a></p>
+    <header>
+        <h1>Wesołych Świąt!</h1>
+        <p>Zapraszamy do naszej świątecznej strony!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Strona Główna</a>
+        <a href="#prezenty">Pomysły na Prezenty</a>
+        <a href="#przepisy">Przepisy Świąteczne</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <section id="home">
+        <div class="card">
+            <h2>Świąteczne inspiracje</h2>
+            <img src="https://via.placeholder.com/300x200?text=Choinka" alt="Choinka">
+            <p>Sprawdź najnowsze pomysły na dekoracje i tradycje świąteczne.</p>
+        </div>
+    </section>
+
+    <section id="prezenty">
+        <div class="card">
+            <h2>Pomysły na Prezenty</h2>
+            <img src="https://via.placeholder.com/300x200?text=Prezenty" alt="Prezenty">
+            <p>Znajdź idealny prezent dla swoich bliskich.</p>
+        </div>
+    </section>
+
+    <section id="przepisy">
+        <div class="card">
+            <h2>Przepisy Świąteczne</h2>
+            <img src="https://via.placeholder.com/300x200?text=Jedzenie" alt="Jedzenie">
+            <p>Odkryj przepisy na pyszne potrawy świąteczne.</p>
+        </div>
+    </section>
+
+    <section id="kontakt">
+        <div class="card">
+            <h2>Kontakt</h2>
+            <p>Napisz do nas na: <a href="mailto:kontakt@swieta.com">kontakt@swieta.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Świąteczna Strona. Wszystkie prawa zastrzeżone.</p>
+    </footer>
 </body>
 </html>
