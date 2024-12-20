@@ -8,9 +8,11 @@
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
         header {
-            color: BLACK;
+            color: black;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -18,56 +20,89 @@
             margin: 0;
             font-size: 2.5rem;
         }
+        header h2, header h3, header h4, header p {
+            margin: 10px 0;
+        }
         nav {
             margin: 20px 0;
         }
         nav a {
             text-decoration: none;
             color: white;
+            background-color: #66cdaa;
             padding: 10px 20px;
             margin: 0 10px;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
         nav a:hover {
-            background-color: #66cdaa;
+            background-color: #4caf50;
         }
         section {
             padding: 20px;
         }
-
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .card {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
         footer {
             background-color: #b22222;
             color: white;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
+            position: relative;
             width: 100%;
+            text-align: center;
+        }
+
+        /* Responsywne style */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                display: block;
+                margin: 10px auto;
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            header h2, header h3, header h4 {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
-
 <body>
-	<img src="https://www.wyspian.pl/wp-content/uploads/2018/12/tapeta-swiateczna-grafika-z-choinka-i-prezentami.jpg" alt="TŁO" width="400">
-	
+    <img src="https://www.wyspian.pl/wp-content/uploads/2018/12/tapeta-swiateczna-grafika-z-choinka-i-prezentami.jpg" alt="TŁO">
     <header>
         <h1>Wesołych Świąt!</h1>
-		<p><h2>I tak już wiesz od kogo to gift.</h2></p>
+        <p><h2>I tak już wiesz od kogo to gift.</h2></p>
         <p><h2>Skoro już tutaj dotarłeś to połowa drogi za Tobą.</h2></p>
-		<p><h3>Pewnie chciałbyś już się dowiedzieć jakie jest hasło do tego magicznego sejfiku.</h3></p>
-		<p><h4>Na początek muszę Cię ostrzec że hasła nie możesz zmienić. Zapytasz - a co jeśli je zapomnę?</h4></p>
-		<p><b>A ja na to - MYK! - No to będziesz miał K*%#a problem.</b></p>
+        <p><h3>Pewnie chciałbyś już się dowiedzieć jakie jest hasło do tego magicznego sejfiku.</h3></p>
+        <p><h4>Na początek muszę Cię ostrzec że hasła nie możesz zmienić. Zapytasz - a co jeśli je zapomnę?</h4></p>
+        <p><b>A ja na to - MYK! - No to będziesz miał K*%#a problem.</b></p>
     </header>
 
     <section id="haslo">
         <div class="card">
             <h2>Kliknij poniżej aby dostać hasło!</h2>
-				<a href="haslo.html" target="_self">
-				<img src="https://st2.depositphotos.com/2274151/5398/v/450/depositphotos_53989781-stock-illustration-click-here-red-three-dimensional.jpg" alt="HASŁO" style="border-radius: 10px;">
-				</a>
-            <p></p>
+            <a href="haslo.html" target="_self">
+                <img src="https://st2.depositphotos.com/2274151/5398/v/450/depositphotos_53989781-stock-illustration-click-here-red-three-dimensional.jpg" alt="HASŁO">
+            </a>
         </div>
-    </section>	
+    </section>
 
     <footer>
         <p>&copy; Jeszcze raz, samych wspaniałości!</p>

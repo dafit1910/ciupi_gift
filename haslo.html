@@ -1,4 +1,4 @@
-</html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -17,10 +17,12 @@
         .container {
             position: relative;
             display: inline-block;
+            width: 90%;
+            max-width: 500px;
         }
         .container img {
-            max-width: 100%; /* Obrazek dopasuje się do szerokości strony */
-            border-radius: 0px; /* Zaokrąglone rogi (opcjonalne) */
+            width: 100%; /* Obrazek dopasuje się do szerokości strony */
+            border-radius: 10px; /* Zaokrąglone rogi (opcjonalne) */
         }
         .message-box {
             position: absolute;
@@ -28,11 +30,38 @@
             left: 50%; /* Wyrównanie do środka w poziomie */
             transform: translate(-50%, -50%); /* Dodatkowe wyśrodkowanie */
             background: rgba(0, 0, 0, 0.9); /* Ciemne półprzezroczyste tło */
-            color: yellow; /* Biały tekst */6
-            padding: 5px 5px;
+            color: yellow; /* Żółty tekst */
+            padding: 15px 20px;
             border-radius: 10px; /* Zaokrąglone rogi */
             text-align: center; /* Wyśrodkowanie tekstu */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Cień dla okienka */
+            font-size: 1rem;
+        }
+        .message-box h2, .message-box h3 {
+            margin: 10px 0;
+        }
+        .message-box img {
+            width: 60%;
+            max-width: 200px;
+            margin-top: 15px;
+        }
+
+        /* Responsywne style */
+        @media (max-width: 768px) {
+            .message-box {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .message-box {
+                font-size: 0.8rem;
+                padding: 10px 15px;
+            }
+            .message-box img {
+                width: 80%;
+            }
         }
     </style>
 </head>
@@ -41,11 +70,10 @@
         <img src="https://i.imgur.com/ktme6VE.jpeg" alt="TŁO">
         <div class="message-box">
             <h2><p>Mam Cię świńtuchu!</p></h2>
-			
-			<h3><p>Tak serio to hasełko do sejfiku masz w guziczku</p></h3>
-				<a href="pw.html" target="_self">
-				<img src="https://w7.pngwing.com/pngs/567/458/png-transparent-click-here-click-click-here-button-internet-here-web-button-icon-computer-business-thumbnail.png" alt="HASŁO" style="border-radius: 10px;">
-				</a>
+            <h3><p>Tak serio to hasełko do sejfiku masz w guziczku</p></h3>
+            <a href="pw.html" target="_self">
+                <img src="https://w7.pngwing.com/pngs/567/458/png-transparent-click-here-click-click-here-button-internet-here-web-button-icon-computer-business-thumbnail.png" alt="HASŁO">
+            </a>
         </div>
     </div>
 </body>
